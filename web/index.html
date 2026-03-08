@@ -1,61 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>DSTIKE Alert Prank – Web Flasher</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js"></script>
+  <title>DSTIKE Multi‑Flasher</title>
   <style>
     body {
       background: #0a0a0a;
       color: #00ff41;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: monospace;
       padding: 20px;
-      max-width: 600px;
-      margin: 0 auto;
     }
-    h1 { margin-bottom: 0.5em; }
-    p { line-height: 1.4; }
-    .card {
+    a {
+      display: block;
+      padding: 12px;
+      margin: 10px 0;
+      background: #111;
       border: 1px solid #00ff41;
-      padding: 16px;
-      border-radius: 8px;
-      margin-top: 20px;
-      background: #050505;
+      color: #00ff41;
+      text-decoration: none;
+      border-radius: 6px;
     }
-    esp-web-install-button {
-      --esp-tools-button-background: #00ff41;
-      --esp-tools-button-color: #000;
-      --esp-tools-button-border-radius: 4px;
-      --esp-tools-button-padding: 10px 16px;
-      --esp-tools-button-font-weight: 600;
+    a:hover {
+      background: #00ff41;
+      color: #000;
     }
   </style>
 </head>
 <body>
-  <h1>DSTIKE Alert Prank – Web Flasher</h1>
-  <p>
-    Flash this custom firmware onto your <strong>DSTIKE Deauth Detector (ESP8266)</strong>.
-    Connect via USB, then click the button below.
-  </p>
 
-  <div class="card">
-    <h2>Flash firmware</h2>
-    <p>
-      1. Plug in the DSTIKE board via USB.<br>
-      2. Click the button and select the correct serial port.<br>
-      3. Wait for flashing to complete.
-    </p>
+  <h1>DSTIKE Multi‑Flasher</h1>
+  <p>Select a firmware to flash:</p>
 
-    <esp-web-install-button manifest="manifest.json">
-      <span slot="unsupported">
-        Your browser doesn’t support Web Serial. Try Chrome, Edge, or another Chromium-based browser.
-      </span>
-    </esp-web-install-button>
-  </div>
+  <a href="deauth-detector/">Original Deauth Detector</a>
+  <a href="captive-portal-prank/">Captive Portal Web Prank</a>
 
-  <p style="margin-top: 24px; font-size: 0.85em; color: #888;">
-    After flashing, connect to the device’s Wi‑Fi AP and open <code>192.168.4.1/settings</code> to configure the prank.
-  </p>
 </body>
 </html>
