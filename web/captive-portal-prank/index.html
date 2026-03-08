@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flash Firmware</title>
+  <script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js"></script>
+</head>
+<body>
+  <h1>Flash Firmware</h1>
+
+  <esp-web-install-button manifest="manifest.json">
+    <span slot="unsupported">
+      Your browser does not support Web Serial.
+    </span>
+  </esp-web-install-button>
+
+</body>
+</html>
